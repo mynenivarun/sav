@@ -11,7 +11,7 @@
 
 //remote sql connection
 
-$host = "remotemysql.com";
+$servername = "remotemysql.com";
 // Enter your MySQL username below(default=root)
 $username = "xKRi93wHXs";
 // Enter your MySQL password below
@@ -19,7 +19,7 @@ $password = "YSTLzBJ5ST";
 $dbname = "xKRi93wHXs";
 
 // Create connection
-$conn = new mysqli($host, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
